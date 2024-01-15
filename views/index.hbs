@@ -1,2 +1,14 @@
 <h1>{{title}}</h1>
 <p>Welcome to {{title}}</p>
+<form action="/new">
+<button type="submit">Add a message </button>
+</form>
+
+ <ul>
+    {{#each messages}}
+      <li>
+        <p>{{text}}</p>
+        <p>By {{user}} on {{added}}</p>
+      </li>
+    {{/each}}
+  </ul>
